@@ -1,0 +1,267 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* General Font Style */
+body {
+    font-family: 'Arial', sans-serif; /* Use Arial font for body text */
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Georgia', serif; 
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase; 
+    color: #333; 
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif; 
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: #444; 
+}
+
+p {
+    font-family: 'Verdana', sans-serif; 
+    font-size: 1rem;
+    color: #555; 
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+footer p {
+    font-family: 'Arial', sans-serif; 
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+nav a {
+    font-family: 'Arial', sans-serif; 
+    font-size: 1rem;
+    text-transform: uppercase; 
+    letter-spacing: 1px;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.5s ease; 
+}
+
+/* Header - Fade In Animation */
+header {
+    background-color: #008C45;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    opacity: 1;
+    animation: fadeIn 1s forwards;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; /* Add transform effect */
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Hover scale effect on header text */
+}
+
+#logo {
+    width: 150px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#logo:hover {
+    transform: scale(1.1); /* Logo hover effect */
+}
+
+/* Navigation - Hover Effects and Glow */
+nav {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+    text-shadow: 0 0 8px rgba(255, 99, 71, 0.6); /* Glow effect */
+    color: white;
+    transform: scale(1.05); /* Slight scale on hover */
+}
+
+/* Main Content */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+main:hover {
+    animation: shake 0.5s ease-in-out;
+}
+
+/* Keyframes for the shake effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+h1, h2{
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+    visibility: visible;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+h2 {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
+}
+
+h2:hover {
+    transform: scale(1.1); /* Slightly zoom in */
+}
+/* Text Fade-in Effect for Paragraphs */
+p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    opacity: 0; 
+    animation: fadeInText 2s forwards 0.5s; 
+}
+
+/* Footer - Sticky Footer with Hover Effect */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1rem;
+    color: #fff;
+    transition: transform 0.3s ease;
+}
+
+footer:hover p {
+    transform: translateY(-3px); 
+}
+
+/* Form - Input and Submit Hover Effects */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #008C45;
+    transform: scale(1.02);
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #008C45;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005a31;
+    transform: scale(1.05);
+}
+
+/* Link Hover & Focus Effect */
+a:focus,
+a:hover {
+    background-color: #ff6347;
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav {
+        text-align: left;
+    }
+
+    nav a {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+}
