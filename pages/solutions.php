@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Global environmental solutions to help create a sustainable future.">
+    <meta name="description" content="Explore solutions to global environmental problems and how we can create a sustainable future.">
     <title>Solutions | Global Environmental Awareness</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/footer.css">
@@ -18,23 +18,21 @@
         </div>
     </header>
 
-    <!-- Solutions Section -->
+    <!-- Solutions Content Section -->
     <main>
         <div class="container">
             <section>
                 <h2>Renewable Energy</h2>
-       
-            <p>Improving energy efficiency in buildings, industries, and transportation can significantly reduce energy consumption and greenhouse gas emissions. Simple steps like using energy-efficient appliances and insulation can make a big difference.</p>
-        <p>There is no expectation of purposeful global cooling in the near-term. For now, what is needed is a strengthened resolve to transition away from fossil fuels and adequate funding to assist nations presently suffering climate disasters. Countries most responsible for climate change will be expected to provide funding. Recognition of a growing obligation may encourage phasedown of relevant emissions. These issues are complex, but now unavoidable.</p>
-    
-                <img src="../images/renewable-energy.jpg" alt="Renewable Energy" class="responsive">
+                <p>One of the most powerful solutions to our environmental crisis is the widespread adoption of renewable energy sources. Renewable energy, such as solar, wind, and hydropower, provides a cleaner alternative to fossil fuels. These sources of energy do not release harmful pollutants into the atmosphere and have a much lower carbon footprint. By shifting away from non-renewable energy, we can drastically reduce our greenhouse gas emissions and combat climate change.</p>
+                <p>Governments and businesses worldwide are investing in renewable energy infrastructure. Solar power is becoming increasingly affordable, and wind energy is expanding as an efficient source of power. Hydropower, which utilizes the movement of water to generate energy, is also one of the oldest and most reliable renewable energy sources. The transition to renewable energy will help us reduce reliance on fossil fuels and achieve a sustainable, low-carbon future.</p>
             </section>
 
             <section>
-                <h2>Waste Reduction</h2>
-                <p>Reducing waste, recycling, and reusing products is essential to cut down on pollution.</p><p>Today’s older generations – despite having adequate information – failed to stem climate change or set the planet on a course to avoid growing climate disasters. And they tied one arm of young people behind their back by supporting only renewable energies as an alternative to fossil fuels. Now, as it has become clear that climate is driving hard toward the Point of No Return, there are efforts to tie the other arm of young people behind their back. We refer to efforts to prohibit actions that may be needed to affect Earth’s energy balance, temporarily, while the difficult task of reducing greenhouse gases is pursued as rapidly as practical – namely Solar Radiation Modification (SRM). Purposeful global cooling with such climate interventions is falsely described as “geoengineering,” while, in fact, it is action to reduce geoengineering. Humanmade climate forcings are already geoengineering the planet at an unprecedented, dangerous, rate.</p>
-                <p>Switching from fossil fuels to renewable energy sources like solar, wind, and hydropower is one of the most effective ways to reduce greenhouse gas emissions. These clean energy sources are abundant and sustainable.</p>
-                <img src="../images/recycling.jpg" alt="Recycling" class="responsive">
+                <h2>Waste Reduction and Recycling</h2>
+                <p>Reducing waste and recycling are critical components of environmental sustainability. Landfills are overflowing, and waste management practices are increasingly strained. By reducing our consumption of single-use plastics and other disposable materials, we can significantly reduce the amount of waste that ends up in landfills and oceans.</p>
+                <p>Recycling programs allow materials such as paper, glass, plastic, and metal to be processed and reused. This reduces the need for raw materials, conserves energy, and lowers pollution. Individuals can make a difference by adopting sustainable practices at home, while businesses can implement more efficient waste management systems. Governments can provide incentives for companies that prioritize waste reduction, recycling, and sustainable product design.</p>
+                <p>Another aspect of waste reduction is composting organic materials. By turning food scraps and yard waste into compost, we can reduce methane emissions from landfills and create nutrient-rich soil for gardens and agriculture. Composting not only helps the environment but also provides a sustainable way to manage waste and support local food systems.</p>
+                <img src="../images/renewable-energy.jpg" alt="Renewable Energy" class="responsive">
             </section>
         </div>
     </main>
@@ -48,4 +46,3 @@
 
 </body>
 </html>
-

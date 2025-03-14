@@ -3,39 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Effects of Global Warming</title>
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="icon" href="../assets/favicon.ico">
+    <meta name="description" content="Read real-life case studies of environmental issues and solutions from around the world.">
+    <title>Case Studies | Global Environmental Awareness</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <img src="../images/logo.png" alt="Global Warming Awareness Logo" id="logo">
-        <h1>Effects of Global Warming</h1>
+        <div class="container">
+            <h1>Case Studies</h1>
+            <p>Explore real-life examples of environmental issues and how various solutions have been implemented around the world.</p>
+        </div>
     </header>
 
-    <nav>
-        <a href="../index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="effects.html">Effects</a>
-        <a href="solutions.html">Solutions</a>
-        <a href="contact.html">Contact</a>
-        <a href="new_rules.html">New Rules</a>
-    </nav>
-
+    <!-- Case Studies Content Section -->
     <main>
-            <h2>Rising Sea Levels</h2>
-            <p>As global temperatures rise, glaciers and ice caps are melting, causing sea levels to rise. This threatens coastal areas with flooding, erosion, and damage to infrastructure. Low-lying island nations are especially at risk.</p>
-            <p>Sea surface temperature is indicative of heat stored in the ocean’s upper “mixed layer,” which is characterized by a single temperature because of continual turbulent stirring by wind and waves. Thus, sea surface temperature change is a good diagnostic to assess the effect of climate forcings over the ocean. The zonal-mean (i.e., average around the world at each latitude) Sea Surface Temperature anomaly relative to 1951-1980 climatology (Figure 10)Footnote53 contains a strong imprint of the Absorbed Solar Radiation anomaly at 30-60°N and reveals a clear global picture. The large global warming in 2023 is a combination of a moderateFootnote54 tropical El Niño and additional warming that is largest at middle latitudes in the Northern Hemisphere. We interpret the additional warming as mainly the effect of reduced human-made aerosols, especially aerosols produced by ships. The ship aerosol effect is greatest in the North Pacific and North Atlantic because that is where ship-produced sulfate aerosols exceeded natural aerosols (Sidebar 5), but ship aerosols have some effect over most of the world ocean. We show below that natural climate forcings in 2022-2023 also made a contribution to the appearance of an unprecedented spike in global warming.</p>
-        
-            <h2>Extreme Weather Events</h2>
-            <p>Climate forcings are imposed changes of Earth’s energy balance. If the Sun suddenly became 1% brighter, for example, that would be a forcing of +2.4 W/m2 (W/m2 is watts, a measure of energy transfer over time, per square meter) because Earth normally absorbs 240 W/m2 of solar energy averaged over Earth’s surface. Solar variability is one of the two natural climate forcings that are important on time scales of years to centuries, the other being large volcanic eruptions that inject gases and aerosols into Earth’s stratosphere (at about 15-50 kilometers, 10-30 miles). It is helpful to compare these well-understood natural forcings with human-made climate forcings</p>
-            <p>Higher temperatures increase the frequency and severity of extreme weather events like hurricanes, floods, and droughts. This leads to destruction of habitats, loss of life, and disruption of local economies.</p>
-        
+        <div class="container">
+            <section>
+                <h2>Case Study 1: The Paris Agreement</h2>
+                <p>The Paris Agreement, adopted in 2015, is a legally binding international treaty aimed at combating climate change. The agreement's central goal is to limit global warming to below 2°C compared to pre-industrial levels, with efforts to keep it below 1.5°C. This agreement brought together 195 countries to collectively address the challenges posed by climate change. It established nationally determined contributions (NDCs), which outline the actions each country will take to reduce greenhouse gas emissions.</p>
+                <p>One of the critical successes of the Paris Agreement is the global commitment to reducing carbon emissions, which has led to major strides in clean energy investments and climate policies. Countries that are part of the agreement have pledged to decarbonize their economies by shifting to renewable energy sources, reducing fossil fuel dependence, and promoting energy efficiency. This case study demonstrates how international cooperation can lead to impactful and meaningful climate action.</p>
+            </section>
+
+            <section>
+                <h2>Case Study 2: Reforestation in China</h2>
+                <p>Over the past several decades, China has implemented large-scale reforestation programs to combat desertification and improve air quality. The country has planted billions of trees to restore degraded land, improve biodiversity, and reduce soil erosion. The goal of these programs is not only to create a buffer against environmental degradation but also to help mitigate the impacts of climate change by absorbing carbon dioxide.</p>
+                <p>One of the most notable reforestation projects is the Green Great Wall initiative, which aims to plant trees across 2,800 kilometers of land in northern China. The initiative has significantly reduced the amount of sandstorms in the region and is contributing to the restoration of wildlife habitats. China’s approach to reforestation serves as an example of how large-scale environmental restoration efforts can positively impact both ecosystems and human communities.</p>
+                <img src="../images/pollution.jpg" alt="Pollution" class="responsive">
+            </section>
+        </div>
     </main>
 
+    <!-- Footer -->
     <footer>
-        <p>© 2025 Global Warming Awareness. All rights reserved.</p>
+        <div class="container">
+            <p>&copy; 2025 Global Environmental Awareness | Designed by Your Name</p>
+        </div>
     </footer>
 
 </body>
