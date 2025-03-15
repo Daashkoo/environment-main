@@ -14,3 +14,8 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error("Error fetching data:", error);
         });
 });
+// Toggle the navigation menu on mobile
+document.getElementById('hamburger').addEventListener('click', function() {
+    const navbarLinks = document.getElementById('navbar-links');
+    navbarLinks.classList.toggle('active');
+});

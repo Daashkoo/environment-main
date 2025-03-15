@@ -1,0 +1,94 @@
+/* Navbar container */
+.navbar {
+    background-color: #4CAF50; /* Primary Green color */
+    color: #0b0713; /* Dark Brown/Black for text */
+    padding: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    font-family: Arial, sans-serif;
+}
+
+/* Logo and Website Name */
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+/* Navbar links */
+.nav-link {
+    color: #0b0713; /* Dark text color */
+    font-size: 18px;
+    font-weight: 600;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #A22522; /* Dark Red color */
+    transform: scale(1.05);
+}
+
+/* Mobile Hamburger Button */
+#hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+#hamburger span {
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: #0b0713;
+    margin: 4px 0;
+}
+
+/* Mobile Menu (for smaller screens) */
+#navbar-links {
+    display: flex;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 15px;
+    }
+    
+    #navbar-links {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        background-color: #F0F0F0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        padding: 20px;
+    }
+
+    #navbar-links.active {
+        display: flex;
+    }
+
+    #hamburger {
+        display: block;
+    }
+}
+
+/* Make the hamburger button show the nav menu */
+#hamburger.active + #navbar-links {
+    display: flex;
+}
