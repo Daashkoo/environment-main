@@ -34,65 +34,101 @@
 
 <!-- Main Content Section -->
 <main>
-    <div class="content-box">
-        <!-- Add this text to your homepage's <main> section -->
-<section id="intro">
-    <h2>Welcome to Global Environmental Awareness</h2>
-    <p class="main-content-p">Our planet faces numerous environmental challenges that affect the delicate balance of life. Climate change, deforestation, pollution, and loss of biodiversity are just a few of the issues that require urgent attention. Our goal is to raise awareness about these challenges and inspire individuals, communities, and governments to take meaningful actions. Together, we can protect and preserve the Earth for future generations.</p>
-    <img src="images/climate-change.jpg" alt="Climate Change" class="responsive">
-</section>
-<section id="impact">
-    <h2>Environmental Impact</h2>
-    <p class="main-content-p">The effects of environmental degradation are widespread and devastating. Rising global temperatures, extreme weather patterns, and the destruction of natural habitats are all signs of the damage we’ve inflicted on the planet. However, there is hope. Through sustainable practices and collective efforts, we can mitigate the damage and restore the Earth’s ecosystems.</p>
-    <img src="images/deforestation.jpg" alt="Deforestation" class="responsive">
+    <h1 id="typedText"></h1>
+
+<!-- Modal Structure (already included in previous code) -->
+<!-- Add parallax class to the section you want to have the parallax effect -->
+<section class="parallax" style="background-image: url('images/climate-change.jpg'); height: 500px;">
+    <h2>Your Content Goes Here</h2>
 </section>
 
+
+    
+    <div class="content-box">
+        <!-- Add this text to your homepage's <main> section -->
+        <section id="intro" class="fade-in">
+            <h2>Welcome to Global Environmental Awareness</h2>
+            <p class="main-content-p">Our planet faces numerous environmental challenges that affect the delicate balance of life. Climate change, deforestation, pollution, and loss of biodiversity are just a few of the issues that require urgent attention. Our goal is to raise awareness about these challenges and inspire individuals, communities, and governments to take meaningful actions. Together, we can protect and preserve the Earth for future generations.</p>
+            <img src="images/climate-change.jpg" alt="Climate Change" class="responsive">
+        </section>
+        <section id="impact" class="fade-in">
+            <h2>Environmental Impact</h2>
+            <p class="main-content-p">The effects of environmental degradation are widespread and devastating. Rising global temperatures, extreme weather patterns, and the destruction of natural habitats are all signs of the damage we’ve inflicted on the planet. However, there is hope. Through sustainable practices and collective efforts, we can mitigate the damage and restore the Earth’s ecosystems.</p>
+            <img src="images/deforestation.jpg" alt="Deforestation" class="responsive">
+        </section>
     </div>
+    <section id="intro" class="fade-in"></section>
+    <!-- Button to open the modal -->
+    <button id="openModal" style="background-color: #4caf50; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s ease;" onmouseover="this.style.backgroundColor='#388e3c'" onmouseout="this.style.backgroundColor='#4caf50'">
+        Open Contact Form
+    </button>
+    
+</section>
 </main>
 
 
-    <!-- Footer -->
-    <footer id="footer-section">
-        <div class="footer-container">
-            <div class="footer-business">
-                <a href="index.html" class="footer-logo-link">
-                    <img src="images/logo.png" alt="Logo" class="footer-logo">
-                </a>
-                <p>Environmental Awareness - Protecting Our Future</p>
+
+<!-- The Modal -->
+<div id="modal" style="display:none;">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h2>Contact Form</h2>
+        <form action="/submit" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer id="footer-section">
+    <div class="footer-container">
+        <div class="footer-business">
+            <a href="index.html" class="footer-logo-link">
+                <img src="images/logo.png" alt="Logo" class="footer-logo">
+            </a>
+            <p>Environmental Awareness - Protecting Our Future</p>
+        </div>
+
+        <div class="footer-links">
+            <a href="index.html" class="hover:text-gray-300">Home</a>
+            <a href="pages/about.html" class="hover:text-gray-300">About</a>
+            <a href="pages/solutions.html" class="hover:text-gray-300">Solutions</a>
+            <a href="pages/case-studies.html" class="hover:text-gray-300">Case Studies</a>
+            <a href="pages/contact.html" class="hover:text-gray-300">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <div class="footer-address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Global Outreach, Earth</p>
             </div>
-    
-            <div class="footer-links">
-                <a href="index.html" class="hover:text-gray-300">Home</a>
-                <a href="pages/about.html" class="hover:text-gray-300">About</a>
-                <a href="pages/solutions.html" class="hover:text-gray-300">Solutions</a>
-                <a href="pages/case-studies.html" class="hover:text-gray-300">Case Studies</a>
-                <a href="pages/contact.html" class="hover:text-gray-300">Contact</a>
+            <div class="footer-phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>(123) 456-7890</p>
             </div>
-    
-            <div class="footer-contact">
-                <div class="footer-address">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <p>Global Outreach, Earth</p>
-                </div>
-                <div class="footer-phone">
-                    <i class="fas fa-phone-alt"></i>
-                    <p>(123) 456-7890</p>
-                </div>
-                <div class="footer-email">
-                    <i class="fas fa-envelope"></i>
-                    <p><a href="mailto:info@environmentalawareness.com">info@environmentalawareness.com</a></p>
-                </div>
+            <div class="footer-email">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:info@environmentalawareness.com">info@environmentalawareness.com</a></p>
             </div>
         </div>
-    
-        <div class="footer-copy">
-            <p>&copy; 2025 Environmental Awareness. All rights reserved.</p>
-        </div>
-    </footer>
-    
+    </div>
 
+    <div class="footer-copy">
+        <p>&copy; 2025 Environmental Awareness. All rights reserved.</p>
+    </div>
+</footer>
 
-    <script src="Script/script.js"></script> <!-- Optional JavaScript for dynamic features -->
+<!-- Optional JavaScript for dynamic features -->
+<script src="Script/script.js"></script>
 
 </body>
 </html>

@@ -9,6 +9,11 @@ header {
     align-items: center;
     position: relative;  /* To make sure absolute positioning works */
 }
+/* 1. Sticky Navbar */
+header.sticky {
+    background-color: #006b3f; /* Darker background when sticky */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 /* Logo styling */
 header a img {
