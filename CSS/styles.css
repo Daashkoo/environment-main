@@ -1,0 +1,167 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Font Style */
+body {
+    font-family: 'Arial', sans-serif; /* Body text font */
+    line-height: 1.6;
+    background-color: #f4f4f4; /* Light gray background */
+    color: #333;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+}
+
+/* Header - Fade In Animation */
+header {
+    background-color: #008C45; /* Primary color */
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    animation: fadeIn 1s forwards;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+header h1:hover {
+    transform: scale(1.1); /* Hover effect */
+}
+
+
+/* Main Content Section */
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Main Content - Text in boxes */
+main .content-box {
+    background-color: #eaeaea; /* Light background for content boxes */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for content boxes */
+main .content-box:hover {
+    background-color: #d1d1d1; /* Darker background on hover */
+}
+
+/* Keyframes for the shake effect */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-10px); }
+    50% { transform: translateX(10px); }
+    75% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+}
+
+/* Headings */
+h1, h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.75rem;
+    transition: transform 0.3s ease-in-out;
+}
+
+h2:hover {
+    transform: scale(1.1); /* Slight zoom in */
+}
+
+/* Targeting only <p> tags inside <main> section */
+.main-content-p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333; /* Or any color you prefer for the main content */
+    margin: 15px 0;
+}
+
+/* Form Styling */
+form {
+    margin-top: 20px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #333;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #008C45;
+    transform: scale(1.02);
+    outline: none;
+}
+
+form input[type="submit"] {
+    background-color: #008C45;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #005a31;
+    transform: scale(1.05);
+}
+
+/* Keyframe Animations */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    main {
+        margin: 20px;
+        padding: 15px;
+    }
+}

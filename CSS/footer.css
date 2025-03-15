@@ -1,4 +1,6 @@
-footer {
+/* Isolate footer styles by using an ID selector */
+
+#footer-section {
     background: #0b0713;
     color: white;
     padding: 60px 15px 15px 15px;
@@ -23,7 +25,8 @@ footer {
     }
 }
 
-footer::before {
+/* Overlay Animation for Footer */
+#footer-section::before {
     content: '';
     position: absolute;
     top: 0;
@@ -44,7 +47,8 @@ footer::before {
     }
 }
 
-footer::after {
+/* Parallax Background for Footer */
+#footer-section::after {
     content: '';
     position: absolute;
     top: 0;
@@ -69,7 +73,8 @@ footer::after {
     }
 }
 
-.footer-business {
+/* Footer Business Section */
+#footer-section .footer-business {
     text-align: center;
     margin-bottom: 25px;
     font-size: 1.5em;
@@ -80,11 +85,12 @@ footer::after {
     transition: transform 0.3s ease;
 }
 
-.footer-business:hover {
+#footer-section .footer-business:hover {
     transform: scale(1.1);
 }
 
-.footer-logo {
+/* Footer Logo */
+#footer-section .footer-logo {
     width: 120px;
     height: 120px;
     border-radius: 50%;
@@ -94,12 +100,13 @@ footer::after {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.footer-logo:hover {
+#footer-section .footer-logo:hover {
     transform: rotate(15deg);
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
 }
 
-.footer-container {
+/* Footer Container Styling */
+#footer-section .footer-container {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -119,9 +126,10 @@ footer::after {
     }
 }
 
-.footer-links,
-.footer-contact,
-.footer-business {
+/* Footer Links and Contact Sections */
+#footer-section .footer-links,
+#footer-section .footer-contact,
+#footer-section .footer-business {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -129,21 +137,22 @@ footer::after {
     align-items: center;
 }
 
-.footer-links a,
-.footer-contact a {
+#footer-section .footer-links a,
+#footer-section .footer-contact a {
     color: white;
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease, transform 0.3s ease;
 }
 
-.footer-links a:hover,
-.footer-contact a:hover {
+#footer-section .footer-links a:hover,
+#footer-section .footer-contact a:hover {
     color: #ffae03;
     transform: translateX(5px);
 }
 
-.footer-copy {
+/* Footer Copy */
+#footer-section .footer-copy {
     font-size: 14px;
     margin-top: 20px;
     text-align: center;
@@ -152,14 +161,15 @@ footer::after {
     color: rgba(255, 255, 255, 0.7);
 }
 
-.footer-contact {
+/* Footer Contact Information */
+#footer-section .footer-contact {
     align-items: flex-start;
     gap: 15px;
 }
 
-.footer-address,
-.footer-phone,
-.footer-email {
+#footer-section .footer-address,
+#footer-section .footer-phone,
+#footer-section .footer-email {
     display: flex;
     gap: 8px;
     align-items: center;
@@ -169,31 +179,34 @@ footer::after {
     transition: transform 0.3s ease;
 }
 
-.footer-address i,
-.footer-phone i,
-.footer-email i {
+#footer-section .footer-address i,
+#footer-section .footer-phone i,
+#footer-section .footer-email i {
     color: #ffae03;
     font-size: 20px;
 }
 
-.footer-address:hover,
-.footer-phone:hover,
-.footer-email:hover {
+#footer-section .footer-address:hover,
+#footer-section .footer-phone:hover,
+#footer-section .footer-email:hover {
     transform: translateX(5px);
 }
 
+/* Mobile View Adjustments for Footer */
 @media (max-width: 768px) {
-    .footer-container {
+    #footer-section .footer-container {
         flex-direction: column;
         align-items: center;
     }
-    .footer-logo {
+
+    #footer-section .footer-logo {
         font-size: 24px;
         margin-bottom: 20px;
     }
-    .footer-links,
-    .footer-contact,
-    .footer-business {
+
+    #footer-section .footer-links,
+    #footer-section .footer-contact,
+    #footer-section .footer-business {
         align-items: center;
         width: 100%;
     }
