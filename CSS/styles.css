@@ -75,7 +75,7 @@ main .content-box:hover {
 /* Headings */
 h1, h2 {
     font-size: 2rem;
-    color: #444;
+    color: #19391b; 
     margin-bottom: 20px;
 }
 
@@ -163,5 +163,26 @@ form input[type="submit"]:hover {
     main {
         margin: 20px;
         padding: 15px;
+    }
+}
+/* Ensure images and videos are responsive */
+img.responsive, iframe {
+    width: 100%;
+    height: auto;
+}
+
+/* Adjust forms for better layout on mobile */
+form input, form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+    main {
+        margin: 15px;
     }
 }
