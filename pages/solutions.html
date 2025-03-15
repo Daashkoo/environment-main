@@ -7,17 +7,31 @@
     <title>Solutions | Global Environmental Awareness</title>
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/footer.css">
 </head>
 <body>
 
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Solutions to Environmental Problems</h1>
-            <p>Explore solutions for mitigating climate change, reducing pollution, and building a sustainable future.</p>
-        </div>
-    </header>
+   <!-- Header Section -->
+<header class="bg-[#4caf50] text-[#ffffff] p-8 shadow-lg sticky top-0 z-50">
+    <nav class="container mx-auto flex items-center justify-between">
+        <!-- Logo on the left -->
+        <a href="../index.html" class="flex items-center space-x-2">
+            <img src="../images/logo.png" alt="Logo" class="w-12 h-12 rounded-full object-cover"> <!-- Adjusted size of the logo -->
+            <span class="text-4xl font-bold hover:text-[#388e3c] transition duration-300"></span>
+        </a>
 
+        <!-- Navbar Links on the right -->
+        <div class="lg:flex space-x-6 hidden" id="navbar-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../pages/about.html" class="nav-link">About</a>
+            <a href="../pages/solutions.html" class="nav-link">Solutions</a>
+            <a href="../pages/case-studies.html" class="nav-link">Case Studies</a>
+            <a href="../pages/resources.html" class="nav-link">Resources</a>
+            <a href="../pages/contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+</header>
     <!-- Solutions Content Section -->
     <main>
         <div class="container">
@@ -37,12 +51,45 @@
         </div>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Global Environmental Awareness | Designed by Your Name</p>
+   <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <div class="footer-business">
+            <a href="index.html" class="footer-logo-link">
+                <img src="../images/logo.png" alt="Logo" class="footer-logo">
+            </a>
+            <p>Environmental Awareness - Protecting Our Future</p>
         </div>
-    </footer>
+
+        <div class="footer-links">
+            <a href="../index.html" class="hover:text-gray-300">Home</a>
+            <a href="../pages/about.html" class="hover:text-gray-300">About</a>
+            <a href="../pages/solutions.html" class="hover:text-gray-300">Solutions</a>
+        <a href="../pages/case-studies.html" class="hover:text-gray-300">Case Studies</a>
+        <a href="../pages/contact.html" class="hover:text-gray-300">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <div class="footer-address">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>Global Outreach, Earth</p>
+            </div>
+            <div class="footer-phone">
+                <i class="fas fa-phone-alt"></i>
+                <p>(123) 456-7890</p>
+            </div>
+            <div class="footer-email">
+                <i class="fas fa-envelope"></i>
+                <p><a href="mailto:info@environmentalawareness.com">info@environmentalawareness.com</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-copy">
+        <p>&copy; 2025 Environmental Awareness. All rights reserved.</p>
+    </div>
+</footer>
+
 
 </body>
 </html>
