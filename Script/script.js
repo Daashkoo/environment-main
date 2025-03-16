@@ -71,13 +71,18 @@ function typeWriter(element, text, speed) {
 const typedTextElement = document.querySelector('#typedText'); // Add an element with this ID in your HTML
 typeWriter(typedTextElement, "Welcome to Global Environmental Awareness!", 100);
 
-// Parallax Scrolling Effect
+// Parallax Scrolling Effect - Slight image movement
 window.addEventListener('scroll', () => {
     const parallax = document.querySelectorAll('.parallax');
     
     parallax.forEach(element => {
         let scrollPosition = window.pageYOffset;
-        element.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+        
+        // Apply a small movement on scroll, adjust multiplier as needed
+        const movement = scrollPosition * 0.2; // Change the multiplier for more or less movement
+        
+        // Apply the parallax effect, but limit the movement to avoid covering content
+        element.style.transform = `translateY(${movement}px)`;
     });
 });
 
@@ -88,7 +93,6 @@ openModalButton.addEventListener('click', () => {
         modal.classList.add('bounce-in');
     }, 10); // Delay to ensure modal shows first
 });
-
 
 // Open the modal with a slide effect
 openModalButton.addEventListener('click', () => {
@@ -101,3 +105,4 @@ closeModalButton.addEventListener('click', () => {
     modal.style.display = 'none';
     modal.classList.remove('slide-in');
 });
+

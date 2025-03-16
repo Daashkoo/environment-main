@@ -270,12 +270,22 @@ img:hover {
     padding-right: 5px;
 }
 
-/* Parallax Scrolling */
 .parallax {
-    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
     background-size: cover;
-    background-position: center;
+    background-position: center center;
+    height: 500px; /* Adjust this based on your needs */
 }
+
+.parallax img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
 
 /* Bounce In for Modal */
 @keyframes bounceIn {
